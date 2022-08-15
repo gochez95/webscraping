@@ -15,3 +15,9 @@ ciudad.select_by_visible_text('Santa Ana, El Salvador')
 
 sala= Select(driver.find_element(By.ID,'cmbComplejos'))
 sala.select_by_visible_text('Cinépolis Metrocentro Santa Ana')
+
+peliculas= driver.find_elements(By.TAG_NAME,'article')
+for pelicula in peliculas:
+    print("entra")
+    print(pelicula.text)
+
